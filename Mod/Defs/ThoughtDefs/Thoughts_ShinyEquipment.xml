@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Three situational thoughts off one worker. The worker scores the pawn's primary weapon and
+       every worn apparel by the Beauty stat factor of the stuff it is made of, and hands back a
+       stage index and a reason string; {0} in a stage label is that reason.
+
+       Which thought a pawn gets is decided by the game, not by the worker: the plain one is
+       nullified by Ascetic, the ascetic one requires it, and the greedy one requires Greedy or
+       Jealous - requiredTraits is any-of, not all-of. A greedy pawn therefore gets the plain
+       thought and the greedy one at once, which is the original balance and is left alone. -->
+
+  <ThoughtDef>
+    <defName>DoctorStupid_ShinyEquipment</defName>
+    <workerClass>DoctorStupid.ShinyMod.ThoughtWorker_ShinyEquipment</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>{0}</label>
+        <description>Shiny things are nice.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>{0}</label>
+        <description>Shiny things are nice.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>{0}</label>
+        <description>Shiny things are nice.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>{0}</label>
+        <description>Shiny things are nice.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>{0}</label>
+        <description>Shiny things are nice.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>{0}</label>
+        <description>Shiny things are nice.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+    <nullifyingTraits>
+      <li>Ascetic</li>
+    </nullifyingTraits>
+  </ThoughtDef>
+
+  <!-- One stage, not six. ThoughtState.StageIndexFor clamps the index the worker returns to the
+       last stage a def declares, so a single stage catches all six and the penalty is the same
+       -5 it always was. The original repeated the identical stage six times, which is six copies
+       of the same sentence for every translator. -->
+  <ThoughtDef>
+    <defName>DoctorStupid_ShinyEquipment_Ascetic</defName>
+    <workerClass>DoctorStupid.ShinyMod.ThoughtWorker_ShinyEquipment</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>ascetic has shiny item</label>
+        <description>I don't want to be covered in precious gems and metals.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+    <requiredTraits>
+      <li>Ascetic</li>
+    </requiredTraits>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>DoctorStupid_ShinyEquipment_Greedy</defName>
+    <workerClass>DoctorStupid.ShinyMod.ThoughtWorker_ShinyEquipment</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>showing off riches</label>
+        <description>An item that will prove my status! I want to have it all!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>showing off riches</label>
+        <description>I'm covered in riches for all to see!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>showing off riches</label>
+        <description>I'm shrouded in a sparkling aura of wealth and power!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>showing off riches</label>
+        <description>Kneel before me, poors!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>showing off riches</label>
+        <description>Kneel before me, poors!</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+      <li>
+        <label>showing off riches</label>
+        <description>The money... the power... it's all so mesmerizing...</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+    <requiredTraits>
+      <li>Greedy</li>
+      <li>Jealous</li>
+    </requiredTraits>
+  </ThoughtDef>
+
+</Defs>

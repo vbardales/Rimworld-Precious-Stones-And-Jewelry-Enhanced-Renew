@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Two shapes of path here, and which one applies depends on the stage's own label.
+       A ThoughtStage is addressed by the handle built from its label, with any {...} stripped
+       out. "showing off riches" appears six times, so each gets the handle plus its rank.
+       "{0}" strips to nothing, so those six stages have no handle at all and the index is the
+       right form for them. The {0} labels hold no text of their own: the reason that fills them
+       is a keyed string, in Languages/French/Keyed. -->
+
+  <!-- EN: Shiny things are nice. -->
+  <DoctorStupid_ShinyEquipment.stages.0.description>Ce qui brille fait plaisir à voir.</DoctorStupid_ShinyEquipment.stages.0.description>
+  <DoctorStupid_ShinyEquipment.stages.1.description>Ce qui brille fait plaisir à voir.</DoctorStupid_ShinyEquipment.stages.1.description>
+  <DoctorStupid_ShinyEquipment.stages.2.description>Ce qui brille fait plaisir à voir.</DoctorStupid_ShinyEquipment.stages.2.description>
+  <DoctorStupid_ShinyEquipment.stages.3.description>Ce qui brille fait plaisir à voir.</DoctorStupid_ShinyEquipment.stages.3.description>
+  <DoctorStupid_ShinyEquipment.stages.4.description>Ce qui brille fait plaisir à voir.</DoctorStupid_ShinyEquipment.stages.4.description>
+  <DoctorStupid_ShinyEquipment.stages.5.description>Ce qui brille fait plaisir à voir.</DoctorStupid_ShinyEquipment.stages.5.description>
+
+  <!-- EN: ascetic has shiny item / I don't want to be covered in precious gems and metals. -->
+  <DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.label>ascète paré de brillant</DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.label>
+  <DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.description>Je ne veux pas être couvert{PAWN_gender ? : e} de gemmes et de métaux précieux.</DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.description>
+
+  <!-- EN: showing off riches -->
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-0.label>étalage de richesses</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-0.label>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-1.label>étalage de richesses</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-1.label>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-2.label>étalage de richesses</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-2.label>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-3.label>étalage de richesses</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-3.label>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-4.label>étalage de richesses</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-4.label>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-5.label>étalage de richesses</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-5.label>
+
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-0.description>Voilà de quoi montrer mon rang ! Je veux tout avoir !</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-0.description>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-1.description>Je suis couvert{PAWN_gender ? : e} de richesses, et tout le monde le voit !</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-1.description>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-2.description>Une aura étincelante de richesse et de puissance m'enveloppe !</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-2.description>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-3.description>À genoux, misérables !</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-3.description>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-4.description>À genoux, misérables !</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-4.description>
+  <DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-5.description>L'argent... le pouvoir... tout cela est si envoûtant...</DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-5.description>
+
+</LanguageData>

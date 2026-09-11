@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- The reason is a noun followed by the item, not an adjective placed before it. French would
+       have the adjective agree in gender and number with an item label the game supplies at
+       runtime - "collier brillant" but "perles brillantes" - and nothing here knows which. A
+       noun and a colon agree with nothing. -->
+  <ShinyMod.Reason.Shiny>éclat : {ITEM}</ShinyMod.Reason.Shiny>
+  <ShinyMod.Reason.Glistening>scintillement : {ITEM}</ShinyMod.Reason.Glistening>
+  <ShinyMod.Reason.AndMore>{REASON}, etc.</ShinyMod.Reason.AndMore>
+
+  <!-- Same reason for the wording of these three: vanilla's own French trait descriptions avoid
+       predicate adjectives ("est de mauvaise humeur", never "est content/contente"), and these
+       are appended to those very sentences. -->
+  <ShinyMod.Trait.Greedy>{PAWN_pronoun} éprouve aussi une grande satisfaction à manier des armes et à porter des vêtements faits de matériaux précieux.</ShinyMod.Trait.Greedy>
+  <ShinyMod.Trait.Jealous>{PAWN_pronoun} éprouve aussi une grande satisfaction à manier des armes et à porter des vêtements faits de matériaux précieux.</ShinyMod.Trait.Jealous>
+  <ShinyMod.Trait.Ascetic>{PAWN_pronoun} ne veut pas non plus manier d'armes ni porter de vêtements faits de matériaux précieux.</ShinyMod.Trait.Ascetic>
+
+</LanguageData>

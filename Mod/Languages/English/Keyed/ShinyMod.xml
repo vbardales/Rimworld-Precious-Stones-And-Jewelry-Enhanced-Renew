@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- The reason shown in place of {0} in the ShinyEquipment stage labels. The original built
+       this by concatenating English in C#, which put the one string a player reads most often
+       out of every translator's reach. -->
+  <ShinyMod.Reason.Shiny>shiny {ITEM}</ShinyMod.Reason.Shiny>
+  <ShinyMod.Reason.Glistening>glistening {ITEM}</ShinyMod.Reason.Glistening>
+  <ShinyMod.Reason.AndMore>{REASON}, etc</ShinyMod.Reason.AndMore>
+
+  <!-- Appended at startup to the descriptions of the three vanilla traits this mod changes.
+       {PAWN_pronoun} resolves the same way it does in the sentences it is appended to. -->
+  <ShinyMod.Trait.Greedy>{PAWN_pronoun} is also especially happy when using weapons and wearing apparel made of precious materials.</ShinyMod.Trait.Greedy>
+  <ShinyMod.Trait.Jealous>{PAWN_pronoun} is also especially happy when using weapons and wearing apparel made of precious materials.</ShinyMod.Trait.Jealous>
+  <ShinyMod.Trait.Ascetic>{PAWN_pronoun} also doesn't want to use weapons or wear apparel made of precious materials.</ShinyMod.Trait.Ascetic>
+
+</LanguageData>

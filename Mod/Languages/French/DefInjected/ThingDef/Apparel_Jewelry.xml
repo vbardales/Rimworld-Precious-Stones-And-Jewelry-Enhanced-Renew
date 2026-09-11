@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: necklace -->
+  <DoctorStupid_Apparel_Necklace.label>collier</DoctorStupid_Apparel_Necklace.label>
+  <DoctorStupid_Apparel_Necklace.description>Un anneau de métal conçu pour être porté autour du cou. On le fait généralement dans des métaux précieux comme l'or ou l'argent.</DoctorStupid_Apparel_Necklace.description>
+
+  <!-- EN: pendant necklace -->
+  <DoctorStupid_Apparel_Amulet.label>pendentif</DoctorStupid_Apparel_Amulet.label>
+  <DoctorStupid_Apparel_Amulet.description>Une pierre soigneusement taillée, fixée à un cordon ou à une fine chaîne de métal pour être portée autour du cou. On y emploie d'ordinaire des gemmes précieuses, mais des pierres plus communes font aussi l'affaire.</DoctorStupid_Apparel_Amulet.description>
+
+  <!-- EN: beads -->
+  <DoctorStupid_Apparel_Beads.label>perles</DoctorStupid_Apparel_Beads.label>
+  <DoctorStupid_Apparel_Beads.description>Des perles de pierre enfilées sur un fil, à porter autour du cou. Les colliers de perles de ce genre comptent parmi les premières parures créées par les humains.</DoctorStupid_Apparel_Beads.description>
+
+</LanguageData>

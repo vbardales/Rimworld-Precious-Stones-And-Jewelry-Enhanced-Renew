@@ -1,0 +1,56 @@
+MIT License
+
+Copyright (c) 2026 nelim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---------------------------------------------------------------------------
+SCOPE OF THE ABOVE
+
+The MIT licence above covers only what the 1.6 port added:
+
+  - the C# in Source/ as it now stands, rebuilt from the source the original
+    shipped: the null guards, the scoring loop factored into one method, and
+    the reason string assembled from keyed strings instead of concatenated
+    English
+  - the fix to the trait-description append, which compared a translated
+    degree label against an English word and so did nothing outside English
+  - the ingredient filter override on the three jewellery items, which the
+    inherited vanilla filter kept gold, silver, jade and obsidian out of
+  - the English keyed strings and the French translation
+  - the packaging and the documentation
+
+IT DOES NOT COVER THE ORIGINAL MOD. The idea, the scoring thresholds, the mood
+values, the three jewellery items and their stats, recipes and gates, the text
+of the thoughts, and all forty-eight textures are DoctorStupid's work, reused
+here:
+
+  https://steamcommunity.com/sharedfiles/filedetails/?id=2903245563
+
+DoctorStupid never declared a licence for them, so none is granted here and
+none can be. They are redistributed under the usual practice for abandoned
+mods - explicit credit, a link to the original, and removal on request.
+About/Preview.png is theirs as it stands, and the textures are theirs byte for
+byte, under their original paths.
+
+If DoctorStupid asks for this to be taken down, it comes down. Immediately, and
+without discussion.
+
+ATTRIBUTION.md records what was taken and what was changed.

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Precious Stones and Jewelry Enhanced 1.6</name>
+  <author>DoctorStupid - 1.6 port: nelim</author>
+  <packageId>nelim.preciousstonesandjewelry</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <url>https://github.com/vbardales/Rimworld-Precious-Stones-And-Jewelry-Enhanced</url>
+  <description>Colonists get a mood bonus for carrying a weapon or wearing clothes made of a beautiful material - gold, silver, jade, obsidian. Not for the item: for the stuff it is made of. Plus three neck pieces so you can put someone in gold without putting them in plate armour.
+
+I am not the author of this mod. The idea, the artwork, the balance and the three jewellery items are DoctorStupid's; all I did was bring it forward to 1.6, fix what the port turned up, and write the French. Credit goes to them; mistakes in the port are mine.
+
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2903245563 - declares 1.4 and 1.5, and nothing further.
+
+HOW IT WORKS
+
+Every worn apparel and the weapon in hand is scored by the Beauty stat factor of the material it is made of, provided that material is metal or stone. Two points of beauty makes a thing shiny and is worth one point; four makes it glistening and is worth three. In the base game plus its expansions that means silver, jade and obsidian at one point each, and gold at three.
+
+Points add up across everything a colonist is wearing and holding, and the mood bonus climbs with them, from +1 for a single silver knife up to +6. The mood tab names the piece that earned it.
+
+Three traits change the picture, and their descriptions in game now say so:
+
+- Greedy or jealous colonists get a second, larger thought on top, up to +8. Wealth on display is the point for them.
+- Ascetic colonists get -5 instead. They did not want any of this.
+
+And three new neck pieces to wear it on: beads, a pendant necklace and a metal necklace, from neolithic to medieval. They sit on the body slot, take the colour of their material, and give a small social impact bonus.
+
+WHAT CHANGED IN THE PORT
+
+Nothing 1.6 removed. Every field and every method this mod uses is still there, and it was checked one by one against the shipped 1.6 assembly before anything was rebuilt. The C# is compiled fresh against 1.6 from the source the original shipped, rather than carried over as a 1.4 binary.
+
+Four things were broken before 1.6 and are fixed here:
+
+- The sentence added to the greedy, jealous and ascetic trait descriptions never appeared in any language but English. It was attached by comparing the trait's degree label against the English word, and a degree label is translated - in French it reads "cupide", so the comparison never matched.
+- Gold, silver, jade and obsidian were barred from the default bill for all three jewellery items. They inherit the vanilla ingredient filter for clothing, which keeps precious materials out, which is right for a shirt and defeats the purpose of a necklace. Those four are allowed back; plasteel, uranium and bioferrite stay out.
+- The mood tab label was assembled in English inside the code, so no translation could reach the one string a player reads most often. It comes from keyed strings now, and the mod ships English and French.
+- A pawn with no apparel tracker at all would have thrown rather than scored zero.
+
+Nothing else moved. The item stats, the recipes, the research gates, the mood values, the thresholds, the artwork and the defNames are as DoctorStupid made them, so a save carried over from the 1.5 mod keeps its jewellery. The two cannot run together: the original is declared incompatible. Run one or the other.
+
+IS THIS REDUNDANT WITH OTHER JEWELLERY MODS
+
+No, and it was checked. There is plenty of jewellery on the Workshop that is alive in 1.6 - Ancient Amulets, D4egon's Jewelry, Itemization Overhaul, Tribal Jewelry, Shiny Math Rocks and others. They add items. None of them implements this mechanic: a mood thought driven by the beauty of the material a worn or wielded thing is made of. Every situational thought in the mods installed here that mentions shiny or precious turned out to be about the pawn's surroundings - metal in the bedroom, furniture nearby - not about what they have on. This mod stacks happily with any of them, and their items count towards it if they are made of stuff.
+
+CREDIT AND REMOVAL
+
+DoctorStupid declared no licence: no file in the mod, nothing in its About.xml, no linked repository, and nothing in the body of the description on its Steam page. It is republished here under the usual convention for abandoned mods - full credit, a link to the original, and removal on request. If DoctorStupid would rather this port did not exist, say so and it comes down: no argument, no delay.
+
+IF I GO QUIET
+
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+AI-GENERATED
+
+The port work was done with Claude Code (Anthropic), under human direction, review and in-game testing. Stated openly: designing with these tools is my job.
+
+THANKS
+
+DoctorStupid for the mod and its artwork.
+
+Source, changelog and attribution: https://github.com/vbardales/Rimworld-Precious-Stones-And-Jewelry-Enhanced</description>
+  <incompatibleWith>
+    <li>DoctorStupid.ShinyMod</li>
+  </incompatibleWith>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+  </loadAfter>
+</ModMetaData>

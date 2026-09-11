@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Three neck pieces that occupy the body slot, so a colonist can wear precious material
+       without being put in plate armour. The defNames carry the original author's prefix and are
+       unchanged: a save made with the 1.5 mod keeps its jewellery.
+
+       Each overrides the ingredient filter it inherits. ApparelMakeableBase and ArmorSmithableBase
+       both bar gold, silver, jade, uranium, plasteel, bioferrite and obsidian from the default
+       bill, which is right for a shirt and wrong for a necklace - those materials are the whole
+       point of these three. Gold, silver, jade and obsidian are allowed back; plasteel, uranium
+       and bioferrite stay out, being neither precious nor pleasant to wear. -->
+
+  <ThingDef ParentName="ArmorSmithableBase">
+    <defName>DoctorStupid_Apparel_Necklace</defName>
+    <label>necklace</label>
+    <description>A metal band designed to be worn around the neck. They're usually made out of precious metals such as gold or silver.</description>
+    <graphicData>
+      <texPath>DoctorStupid/Apparel/Necklace/Necklace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <costStuffCount>15</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.1</Mass>
+      <StuffEffectMultiplierArmor>0.00</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>2000</displayPriority>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Plasteel</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <wornGraphicPath>DoctorStupid/Apparel/Necklace/Necklace</wornGraphicPath>
+      <ai_pickUpOpportunistically>false</ai_pickUpOpportunistically>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>Clothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorSmithableBase">
+    <defName>DoctorStupid_Apparel_Amulet</defName>
+    <label>pendant necklace</label>
+    <description>A carefully cut stone affixed to either a length of string or a thin metal band for it to be worn around the neck. Usually they're made using precious gemstones, although more typical stones may be used as well.</description>
+    <graphicData>
+      <texPath>DoctorStupid/Apparel/Amulet/Amulet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.1</Mass>
+      <StuffEffectMultiplierArmor>0.00</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>2000</displayPriority>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Plasteel</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <wornGraphicPath>DoctorStupid/Apparel/Amulet/Amulet</wornGraphicPath>
+      <ai_pickUpOpportunistically>false</ai_pickUpOpportunistically>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>Clothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>DoctorStupid_Apparel_Beads</defName>
+    <label>beads</label>
+    <description>Stone beads strung through a piece of thread that can be worn around the neck. Simple beaded necklaces such as these are among the first forms of jewelry created by early humans.</description>
+    <graphicData>
+      <texPath>DoctorStupid/Apparel/Beads/Beads</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.1</Mass>
+      <StuffEffectMultiplierArmor>0.00</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <displayPriority>2000</displayPriority>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Plasteel</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <wornGraphicPath>DoctorStupid/Apparel/Beads/Beads</wornGraphicPath>
+      <ai_pickUpOpportunistically>false</ai_pickUpOpportunistically>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <wearPerDay>0.55</wearPerDay>
+      <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>
