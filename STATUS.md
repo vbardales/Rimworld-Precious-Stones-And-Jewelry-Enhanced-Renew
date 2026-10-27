@@ -1,11 +1,11 @@
 ---
 mod: Precious Stones and Jewelry Enhanced Renew (unofficial)
 packageId: nelim.preciousstonesandjewelry
-repo: Rimworld-Precious-Stones-And-Jewelry-Enhanced
-remote: https://github.com/vbardales/Rimworld-Precious-Stones-And-Jewelry-Enhanced.git
+repo: Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew
+remote: https://github.com/vbardales/Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew.git
 visibility: public
 detached: yes
-workflow_stage: setupRepo
+workflow_stage: makeSources
 licence: silent
 licence_at: "2026-09-13: source DoctorStupid (2903245563) declares only 1.4 and 1.5, so abandoned by the workflow definition; no licence in the mod files, in About.xml, or in the Steam description body; no linked repository"
 upstream_mod_remotes: N/A
@@ -19,7 +19,6 @@ published: no
 tested_on: never
 remaining:
   - "2026-10-28: unverified: current upstream permissions and Steam comments of 2903245563"
-  - "2026-10-28: defect: GitHub repo name lacks the -Renew suffix of the naming convention (Rimworld-<Name>-Renew)"
   - "2026-10-28: defect: Art/Preview.config.json echo file is echo-preview.png, the minimal set names echo-source.png"
   - "2026-10-28: defect: thought reason wraps an already translated fragment (ThoughtWorker_ShinyEquipment.cs) instead of complete parameterized variants"
   - "2026-10-28: unverified: gameplay regression suite and EN/FR in-game validation; the About claim of in-game testing is not backed by evidence"
@@ -47,6 +46,7 @@ settings and dependency findings (no settings surface, Core API only) stay unche
   surroundings-based thoughts (Erin's Corvyia, For Colour and Justice Kz). Not a duplicate.
 - About.xml: UNOFFICIAL paragraph opens the description.
 - `Mod/About/PublishedFileId.txt` = 3811382942: a Workshop item exists, so the file is committed.
+- GitHub repository renamed to `Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew` (owner, 2026-10-28); remote, `repo`, and the About.xml `<url>` and source link follow.
 - Standalone repository set up over the existing public remote (single import commit of
   2026-09-11), history kept, no force push.
 - Art: `ModIcon-source.png` cropped in place by badge mode at the owner's request (2026-10-28), the
