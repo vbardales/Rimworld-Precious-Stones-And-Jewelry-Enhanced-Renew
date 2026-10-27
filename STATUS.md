@@ -5,7 +5,7 @@ repo: Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew
 remote: https://github.com/vbardales/Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew.git
 visibility: public
 detached: yes
-workflow_stage: code[1.0.0]
+workflow_stage: declareDependencies[1.0.0]
 licence: silent
 licence_at: "2026-09-13: source DoctorStupid (2903245563) declares only 1.4 and 1.5, so abandoned by the workflow definition; no licence in the mod files, in About.xml, or in the Steam description body; no linked repository"
 upstream_mod_remotes: N/A
@@ -59,3 +59,7 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 - ModIcon source cropped by badge mode, derivatives regenerated: ModIcon.png 128x128 (26.5 KB), ModIcon.ico, Preview.png 896x504.
 - Preview-source.png 1672x941: object readable (jeweler at a bench with the three neck pieces and the four materials), one figure seen from behind, 2 hue families (dominant 71 %), mean value 0.275 so below the 0.30 rule, which is recorded as a defect. No illustration prompt file exists, nothing to delete.
 - Art holds the minimal set; the echo file is still named echo-preview.png.
+
+## code, 2026-10-28
+
+- No feature left for 1.0.0. `dotnet build Source/ShinyMod.csproj -c Release`: 0 errors, 0 warnings, intermediates in `build/`; the rebuilt `Mod/Assemblies/ShinyMod.dll` is byte-identical to the committed one (git shows no change). No local script. CHANGELOG `[Unreleased]` states the change.
