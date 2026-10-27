@@ -15,7 +15,7 @@ no clause of any kind.
 
 This is the usual convention for ports on the RimWorld Workshop: republished with **credit by
 name** and **removal on request, without argument**. The `<author>` field reads
-`DoctorStupid - 1.6 port: nelim`, and the removal clause is in the description.
+`DoctorStupid - 1.6 adapted by Nelim`, and the removal clause is in the description.
 
 ## Not redundant with the jewellery mods that are alive
 

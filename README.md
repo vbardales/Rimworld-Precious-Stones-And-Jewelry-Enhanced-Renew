@@ -1,6 +1,6 @@
-# Precious Stones and Jewelry Enhanced 1.6
+# Precious Stones and Jewelry Enhanced Renew (unofficial)
 
-A 1.6 port of **Precious Stones and Jewelry Enhanced** by **DoctorStupid**
+A port to the latest RimWorld version of **Precious Stones and Jewelry Enhanced** by **DoctorStupid**
 ([Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2903245563)), which declares 1.4
 and 1.5 and nothing further.
 
@@ -38,7 +38,7 @@ impact bonus.
 
 The name says jewellery; the mechanic is not about jewellery. Ancient Amulets (Continued),
 D4egon's Jewelry, Itemization Overhaul - Jewelry & Charms, Jewelry (kikohi), Tribal Jewelry
-(Continued) and [OMW] Shiny Math Rocks are all alive in 1.6, and they **add items**. None of them
+(Continued) and [OMW] Shiny Math Rocks are all alive on the latest RimWorld version, and they **add items**. None of them
 implements a mood thought driven by the beauty of the material a worn or wielded thing is made of.
 
 That was checked, not assumed: every `.xml` across the 10 358 installed Workshop mods was searched,
@@ -82,9 +82,10 @@ nothing.
 ## Repository layout
 
 ```
-PreciousStonesAndJewelry/
-  Mod/       published to the Workshop; the junction into RimWorld/Mods points here
-  Source/    C#, never published; OutputPath = ..\Mod\Assemblies\
+Mod/       published to the Workshop; the junction into RimWorld/Mods points here
+Source/    C#, never published; OutputPath = ..\Mod\Assemblies\
+Art/       Preview and ModIcon sources and outputs, never published
+build/     build intermediates, ignored by git
 ```
 
 Build with `dotnet build -c Release` from `Source/`. References come from NuGet

@@ -9,6 +9,7 @@ All notable changes to this port are recorded here. The format follows
 
 - 1.6 port of Precious Stones and Jewelry Enhanced by DoctorStupid, rebuilt from the C# the
   original shipped rather than from its 1.4 binary.
+- ModIcon and Workshop Preview.
 - English and French keyed strings for the thought label, and a French translation of the three
   jewellery items and the three thoughts.
 
@@ -37,7 +38,3 @@ All notable changes to this port are recorded here. The format follows
 - The scoring loop, previously duplicated for equipment and for apparel, is one method. Same
   behaviour, including the rule that the first glistening item takes the label outright.
 
-### Not included
-
-- No `About/ModIcon.png`. An icon cropped from the upstream author's own textures would make their
-  art carry the port's identity; this ships without one until a mascot icon is drawn.

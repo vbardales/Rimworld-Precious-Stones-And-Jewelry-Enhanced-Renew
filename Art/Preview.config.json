@@ -1,0 +1,13 @@
+{
+  "panel": {
+    "title":"Precious Stones and Jewelry Enhanced 1.6","titleSize":36,
+    "titleParts":[{"text":"Precious Stones"},{"text":"and Jewelry","breakBefore":true}],
+    "suffix":"Enhanced 1.6","tagInline":true,
+    "copyLines":["Beauty that colonists can wear.", "Gold, silver, jade and obsidian."]
+  },
+  "backgroundFile":"Preview-source.png",
+  "echo":{"file":"echo-preview.png","color":"var(--accent)","width":185,"height":170},
+  "icon":{"file":"ModIcon-source.png","corner":"bottom-left"},
+  "modIconSource":"ModIcon-source.png",
+  "palette":{"veil":"#33291F","inkPrimary":"#F5EFE5","inkSecondary":"#79B789","accent":"#E2AF39","badgeInk":"#17120E"}
+}

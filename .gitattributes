@@ -1,7 +1,3 @@
-# Normalise line endings in this repository, while each machine keeps its own.
-# The monorepo has its own copy; `git subtree split` does not export it, so this
-# one exists for the repository this mod is split into.
-
 * text=auto
 
 *.xml   text
@@ -9,4 +5,6 @@
 *.txt   text
 
 *.png binary
+*.ico binary
+*.dll binary
 *.psd binary
