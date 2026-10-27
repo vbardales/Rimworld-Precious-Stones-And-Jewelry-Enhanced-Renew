@@ -24,6 +24,7 @@ remaining:
   - "2026-10-28: defect: thought reason wraps an already translated fragment (ThoughtWorker_ShinyEquipment.cs) instead of complete parameterized variants"
   - "2026-10-28: unverified: gameplay regression suite and EN/FR in-game validation; the About claim of in-game testing is not backed by evidence"
 updated: 2026-10-28
+protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
 ---
 
 # Precious Stones and Jewelry Enhanced Renew (unofficial): status
