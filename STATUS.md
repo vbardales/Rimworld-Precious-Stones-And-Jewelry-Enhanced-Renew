@@ -100,3 +100,4 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 - 7.f Results refer to the revision above.
 - 7.d Pickle suites: not written yet. NPT (2026-10-28) will add the missing steps to PickleTools (wear and wield made of a stuff, has the trait, thought label reads, trait description reads); no local step DLL for this mod. The features use them once committed; played in a small ticket of this session.
 - Colonists of the Pickle suite: those of Nelim's Sanctuary Backlot (save Nelims-tribe), never test-colony, unless the owner grants an express, motivated exception (owner rule, 2026-10-28). Recorded in TEST_SCENARIOS.md.
+- Scenarios dropped or changed (owner, 2026-10-28): 23 (1.5 save of the original) is not done; the original-mod incompatibility is not tested; scenario 22 now covers the other jewellery mods (optional integration pass, D4egon's Jewelry item made of Gold counts).

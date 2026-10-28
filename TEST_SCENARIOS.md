@@ -51,9 +51,12 @@ in that save: the step that makes one acts on an NSB colonist, or the owner deci
 | 19 | Trait descriptions carry the added sentence | Game in English, then in French | Open the Greedy, Jealous and Ascetic trait cards | One extra sentence each in the loaded language; after a language change it appears only after a restart | unverified |
 | 20 | French pawn sentences agree | Game in French | Show the Ascetic and Greedy (stage 2) thought texts on a male, a female and a no-gender colonist | `couvert`, `couverte`, `couvertx`; the pronoun of the three trait sentences for a no-gender colonist is checked here | unverified |
 | 21 | No error in the log | Any of the above | Read `Player.log` after the run | No exception, no red error from this mod; no raw key shown in the UI | unverified |
-| 22 | Incompatible with the original | Original `DoctorStupid.ShinyMod` also enabled | Open the mod list | The game flags the incompatibility | unverified |
-| 23 | A 1.5 save keeps its jewellery | A save made with the original mod | Load it with this mod instead | Jewellery items present, no missing-def error (defNames unchanged) | unverified, needs an old save |
+| 22 | Items of other jewellery mods count, and those mods coexist | Optional integration pass: D4egon's Jewelry (`D4egon.D4egonsJewlry`, 3757128869) loaded, plus Tribal Jewelry (Continued), Itemization Overhaul - Jewelry & Charms, [OMW] Shiny Math Rocks and Jewelry (kikohi) | Dress a colonist in `D4J_DarkRing` made of Gold (Metallic, right hand: no clash with a neck piece), alone then with a gold necklace; wear items of the other mods that have no stuff | The dark ring made of Gold scores 3 points (alone: +3; with the gold necklace: +6, label with `, etc`); items with no stuff score nothing; no error in the log with all five mods loaded | unverified |
+| 23 | Not done | | | Dropped by the owner on 2026-10-28 (a 1.5 save made with the original mod): no scenario, no check. | not applicable |
 
 ## Notes
+
+- Incompatibility with the original mod (`DoctorStupid.ShinyMod`, `incompatibleWith` in About.xml): not tested, by the owner's decision of 2026-10-28; the other jewellery mods are (scenario 22). The earlier scenario 22 (the game's flag in the mod list) is gone, and so is scenario 23.
+- Only D4egon's Jewelry of the five has apparel made of a Metallic or Stony stuff (`D4J_DarkRing`, `D4J_NazGhoulCrown`, read in its Defs on 2026-10-28); the four others add items with no stuff, which score nothing. Ancient Amulets (Continued) was not looked at.
 
 - The Beauty factors and the stage cap are rules of the game. The scenarios read them as results, not as inputs.
