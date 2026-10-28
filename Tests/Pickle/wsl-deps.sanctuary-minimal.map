@@ -1,0 +1,9 @@
+# Minimal pass: the colonists of Nelim's Sanctuary Backlot (save Nelims-tribe) with only the tools the Backlot depends on.
+# Owner rule 2026-10-28: this suite uses the Backlot's colonists. NOT proven to load them without the third-party list of
+# SanctuaryBacklot/Tests/Pickle/wsl-deps.sanctuary.map (facial animation, realistic bodies): the probe feature tells. If it does not,
+# copy that map line by line here (plus the config seeds of SanctuaryBacklot/Tests/Pickle/config/sanctuary/) and add the next line.
+#
+#   Submit-PickleRun.ps1 -Mod PreciousStonesAndJewelryRenew -DepMap wsl-deps.sanctuary-minimal.map -Filter "@probe"
+nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.sanctuarybacklot path:SanctuaryBacklot/Mod

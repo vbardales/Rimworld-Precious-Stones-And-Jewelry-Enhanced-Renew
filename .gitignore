@@ -23,3 +23,8 @@ Thumbs.db
 desktop.ini
 .DS_Store
 .claude/
+
+# Pickle run reports, disk only.
+Tests/Pickle/Evidence/
+Tests/Pickle/Inbox/
+Tests/Pickle/Parked/

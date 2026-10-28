@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Precious Stones and Jewelry Enhanced Renew - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.preciousstonesandjewelry.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for Precious Stones and Jewelry Enhanced Renew, run by Pickle. Development only: never published.
+
+The scenarios dress colonists of Nelim's Sanctuary Backlot in jewellery of a chosen material and read the mood thoughts back.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.preciousstonesandjewelry</packageId>
+      <displayName>Precious Stones and Jewelry Enhanced Renew</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>nelim.pickletools.colonistrace</packageId>
+      <displayName>Nelim's Pickle Tools - Colonist race</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.preciousstonesandjewelry</li>
+    <li>rimworks.pickle</li>
+    <li>nelim.pickletools.colonistrace</li>
+  </loadAfter>
+</ModMetaData>
