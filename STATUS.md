@@ -98,4 +98,4 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 - 7.b Automated unit tests: not applicable. The only logic (scoring, trait sentences) reads Pawn, Thing and ThingDef from the running game, so there is no pure function to test without the game; scenarios 1 to 12 and 19 cover it through Pickle. No artificial test added.
 - 7.c XML checks, rerun now: `Check-ModBasics.ps1` PASS (7 XML files, 6 defs); `Check-XmlFields.ps1` 3 files, no unknown field; `Check-DefRefs.ps1` no missing reference, no wrong type, all parents resolved; `Check-DefInjected.ps1` 26 keys, 0 errors. `Check-XmlClasses.ps1` not run: it needs a TypeLists argument this mod does not have (its only class, the worker, is in the mod assembly).
 - 7.f Results refer to the revision above.
-- 7.d Pickle suites: not written yet.
+- 7.d Pickle suites: not written yet. NPT (2026-10-28) will add the missing steps to PickleTools (wear and wield made of a stuff, has the trait, thought label reads, trait description reads); no local step DLL for this mod. The features use them once committed; played in a small ticket of this session.
