@@ -107,3 +107,4 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 ## playTests, 2026-10-28
 
 Entered from writeTests with 7.a to 7.h recorded above. Order of the first tickets: the @probe scenario with wsl-deps.sanctuary-minimal.map (do the Backlot colonists load, do the new steps work, calibrate the stat bounds from the [stat] log), then the full pass in English and in French, then the D4egon pass. Nothing played yet. The tested revision of Mod and Source is d9ab22b.
+- Ticket 20261028-112650-429-9357 filed (probe, `-DepMap wsl-deps.sanctuary-minimal.map`, filter @probe, label 532b95c). Mod, Source and Tests stay frozen until RUN_DONE.
