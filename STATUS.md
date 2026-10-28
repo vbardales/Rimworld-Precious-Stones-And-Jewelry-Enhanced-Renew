@@ -5,11 +5,11 @@ repo: Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew
 remote: https://github.com/vbardales/Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew.git
 visibility: public
 detached: yes
-workflow_stage: settings[1.0.0]
+workflow_stage: localize[1.0.0]
 licence: silent
 licence_at: "2026-09-13: source DoctorStupid (2903245563) declares only 1.4 and 1.5, so abandoned by the workflow definition; no licence in the mod files, in About.xml, or in the Steam description body; no linked repository"
 upstream_mod_remotes: N/A
-settings_audit: unchecked
+settings_audit: not_applicable
 localization: partial
 translation_en: complete
 translation_fr: unchecked
@@ -69,3 +69,10 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 - Code references only Core types (RimWorld, Verse: TraitDefOf, StuffCategoryDefOf, StatDefOf); no Harmony, no other mod. Defs reference Core defs only.
 - DLC content is guarded on the element, never on an Operation: `MayRequire="Ludeon.RimWorld.Ideology"` on the three SlaveSuppressionOffset stats, `MayRequire="Ludeon.RimWorld.Anomaly"` on the three Bioferrite filter entries. Obsidian (Odyssey) is scored by its stuff properties at runtime, no def references it.
 - About.xml: no `modDependencies`; `loadAfter` Ludeon.RimWorld; `incompatibleWith` DoctorStupid.ShinyMod, checked against the original About.xml (packageId DoctorStupid.ShinyMod, 1.4 and 1.5). `supportedVersions` 1.6. No LoadFolders.xml, no conditional patch, no load-order cycle possible. Not an animal mod, so ANIMALS.md does not apply.
+
+## Settings audit, 2026-10-28 (revision 4cd2ecf)
+
+- Inventory: the C# is two files (ShinyModTraitDescriptions.cs, ThoughtWorker_ShinyEquipment.cs). No Verse.Mod subclass, no ModSettings, no settings window, no MainButtonDef; Mod/Defs holds only ThingDefs_Misc and ThoughtDefs. Configurable behaviour is four fixed balance constants (Beauty thresholds 2.0 and 4.0, points 1 and 3) and six mood steps, preserved from the original.
+- Decision: no settings. No concrete player need: the thresholds are the mod's rule and exposing them would be a rebalance, not a feature. Bill ingredients use the game's own bill interface.
+- Access contract: absence of any settings page and any MainButtons shortcut is verified in sources and defs above. Shortcut integration and RIMMSQOL are not applicable. No test run, none claimed.
+- Language switch: the trait sentences are appended by a static constructor, so a language change needs a restart. Not a setting; kept as an in-game case for playTests.
