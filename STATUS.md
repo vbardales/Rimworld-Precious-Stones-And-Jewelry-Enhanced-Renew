@@ -10,9 +10,9 @@ licence: silent
 licence_at: "2026-09-13: source DoctorStupid (2903245563) declares only 1.4 and 1.5, so abandoned by the workflow definition; no licence in the mod files, in About.xml, or in the Steam description body; no linked repository"
 upstream_mod_remotes: N/A
 settings_audit: not_applicable
-localization: partial
+localization: complete
 translation_en: complete
-translation_fr: unchecked
+translation_fr: complete
 dependencies: none
 workshop: 3811382942
 published: no
@@ -21,7 +21,6 @@ remaining:
   - "2026-10-28: defect: Art/Preview-source.png mean value 0.275 (rule: at least 0.30), large dark area on the left reads as a vignette; owner source, not touched"
   - "2026-10-28: unverified: current upstream permissions and Steam comments of 2903245563"
   - "2026-10-28: unverified: in game at playTests, French {PAWN_pronoun} for a pawn with no gender in the three ShinyMod.Trait.* sentences (ChatGPT review, 2026-10-28)"
-  - "2026-10-28: unverified: French review by Virginie (FRENCH_REVIEW.md)"
   - "2026-10-28: unverified: Check-Translations.ps1 expects handle paths stages.0-N for the six {0} labels, French ships index paths stages.N (Check-DefInjected.ps1 resolves all 26 keys); settle in game"
   - "2026-10-28: unverified: gameplay regression suite and EN/FR in-game validation; the About claim of in-game testing is not backed by evidence"
 updated: 2026-10-28
@@ -91,3 +90,4 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 - ChatGPT review of FRENCH_REVIEW.md (2026-10-28, run on the middle dot version): the two neutral-segment findings were already fixed by couvertx, the epicene rewording is declined (agreement is kept when the gender is available); the pronoun finding is kept as an in-game check at playTests; the PUBLICATION.md finding waits for writeDocs.
 - Second ChatGPT review (2026-10-28, on couvertx): Amulet description now says "fine bande de métal" (English: thin metal band, the French said chain). The pronoun finding stays the in-game check above. Virginie's review covers this changed text.
 - Third ChatGPT review (2026-10-28): necklace description now says "bande de métal" (English: metal band; anneau means ring), ascetic stage label now "ascète portant un objet brillant" (English: has shiny item). Virginie's review covers both changed texts.
+- French review by Virginie: reviewer Virginie, 2026-10-28, revision d9ab22b (FRENCH_REVIEW.md), validated in the session by her own message after four ChatGPT passes; corrections she asked for: couvertx as the neutral segment. Texts changed since the first pass: amulet and necklace (bande de métal), ascetic label (portant un objet brillant). The in-game pronoun check stays open for playTests. The session did not touch the Review line table of FRENCH_REVIEW.md, which is hers.
