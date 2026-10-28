@@ -5,7 +5,7 @@ repo: Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew
 remote: https://github.com/vbardales/Rimworld-Precious-Stones-And-Jewelry-Enhanced-Renew.git
 visibility: public
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: silent
 licence_at: "2026-09-13: source DoctorStupid (2903245563) declares only 1.4 and 1.5, so abandoned by the workflow definition; no licence in the mod files, in About.xml, or in the Steam description body; no linked repository"
 upstream_mod_remotes: N/A
@@ -103,3 +103,7 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 - 7.h This section is the record: 7.a to 7.g done.
 - Colonists of the Pickle suite: those of Nelim's Sanctuary Backlot (save Nelims-tribe), never test-colony, unless the owner grants an express, motivated exception (owner rule, 2026-10-28). Recorded in TEST_SCENARIOS.md.
 - Scenarios dropped or changed (owner, 2026-10-28): 23 (1.5 save of the original) is not done; the original-mod incompatibility is not tested; scenario 22 now covers the other jewellery mods (optional integration pass, D4egon's Jewelry item made of Gold counts).
+
+## playTests, 2026-10-28
+
+Entered from writeTests with 7.a to 7.h recorded above. Order of the first tickets: the @probe scenario with wsl-deps.sanctuary-minimal.map (do the Backlot colonists load, do the new steps work, calibrate the stat bounds from the [stat] log), then the full pass in English and in French, then the D4egon pass. Nothing played yet. The tested revision of Mod and Source is d9ab22b.
