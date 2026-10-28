@@ -1,0 +1,8 @@
+# Optional integration pass: the minimal pass plus D4egon's Jewelry (scenario 22, features tagged @requires:D4egon.D4egonsJewlry).
+# Maps are not merged, so the lines of wsl-deps.sanctuary-minimal.map are repeated. Same caveat: not proven for the Backlot colonists.
+#
+#   Submit-PickleRun.ps1 -Mod PreciousStonesAndJewelryRenew -DepMap wsl-deps.sanctuary-d4egon.map -Filter "precious-stones-other-jewellery"
+nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.sanctuarybacklot path:SanctuaryBacklot/Mod
+D4egon.D4egonsJewlry 3757128869

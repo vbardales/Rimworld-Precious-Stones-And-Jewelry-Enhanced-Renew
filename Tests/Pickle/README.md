@@ -13,8 +13,11 @@ Development only, never published. Scenarios are written, **none has been played
 | `precious-stones-trait-text.feature` | 19 (trait descriptions, `@english` and `@french`) |
 | `precious-stones-other-jewellery.feature` | 22 (D4egon's Jewelry, optional integration, `@requires:D4egon.D4egonsJewlry`) |
 
-Not written yet, waiting for steps NPT may add to PickleTools: 13 to 16 (recipes, bill filter, stat) and 20 (French agreement of a thought
-text for a colonist with no gender). Not done by the owner's decision: 23, and the original-mod incompatibility.
+| `precious-stones-recipes.feature` | 13, 14, 15 (where the items are made, their gates, the default bill filter) |
+| `precious-stones-stats.feature` | 16, 17 (equipped stat offsets; bounds to calibrate from the first run's `[stat]` log) |
+| `precious-stones-french-agreement.feature` | 20 (couvert, couverte, couvertx; `@french`) |
+
+Not done by the owner's decision: 23, and the original-mod incompatibility.
 
 ## Colonists
 
@@ -29,7 +32,7 @@ third-party list (facial animation, realistic bodies): play `@probe` first and r
 `SanctuaryBacklot/Tests/Pickle/wsl-deps.sanctuary.map` here line by line, add `path:SanctuaryBacklot/Mod` and the config seeds of
 `SanctuaryBacklot/Tests/Pickle/config/sanctuary/`.
 
-The integration feature needs a map that also stages D4egon's Jewelry (`D4egon.D4egonsJewlry`, Workshop 3757128869): a second map, to write once the probe passes.
+The integration feature uses `wsl-deps.sanctuary-d4egon.map` (the minimal map plus D4egon's Jewelry, `D4egon.D4egonsJewlry`, Workshop 3757128869), with the same caveat.
 
 ## Steps
 
