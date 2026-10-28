@@ -17,7 +17,7 @@
   <DoctorStupid_ShinyEquipment.stages.5.description>Ce qui brille fait plaisir à voir.</DoctorStupid_ShinyEquipment.stages.5.description>
 
   <!-- EN: ascetic has shiny item / I don't want to be covered in precious gems and metals. -->
-  <DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.label>ascète paré de brillant</DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.label>
+  <DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.label>ascète portant un objet brillant</DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.label>
   <DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.description>Je ne veux pas être couvert{PAWN_gender ? : e : x} de gemmes et de métaux précieux.</DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.description>
 
   <!-- EN: showing off riches -->
