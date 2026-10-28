@@ -1,6 +1,4 @@
 {
-  "DoctorStupid_ShinyEquipment_Ascetic.stages.ascetic_has_shiny_item.description": "Neutral segment ships a middle dot form (e with a dot before it), which the al system forbids inside the neutral segment (TRANSLATIONS.md). The al ending of couvert is not known here: please give it.",
-  "DoctorStupid_ShinyEquipment_Greedy.stages.showing_off_riches-1.description": "Same neutral segment as the ascetic text: middle dot form to replace by the al ending of couvert.",
   "ShinyMod.Trait.Greedy": "Starts with the pawn pronoun token: unverified what the engine resolves for a pawn with no gender in French (il, elle, or another form).",
   "ShinyMod.Trait.Jealous": "Same pronoun question as ShinyMod.Trait.Greedy.",
   "ShinyMod.Trait.Ascetic": "Same pronoun question as ShinyMod.Trait.Greedy."
