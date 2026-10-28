@@ -91,3 +91,11 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 - Second ChatGPT review (2026-10-28, on couvertx): Amulet description now says "fine bande de métal" (English: thin metal band, the French said chain). The pronoun finding stays the in-game check above. Virginie's review covers this changed text.
 - Third ChatGPT review (2026-10-28): necklace description now says "bande de métal" (English: metal band; anneau means ring), ascetic stage label now "ascète portant un objet brillant" (English: has shiny item). Virginie's review covers both changed texts.
 - French review by Virginie: reviewer Virginie, 2026-10-28, revision d9ab22b (FRENCH_REVIEW.md), validated in the session by her own message after four ChatGPT passes; corrections she asked for: couvertx as the neutral segment. Texts changed since the first pass: amulet and necklace (bande de métal), ascetic label (portant un objet brillant). The in-game pronoun check stays open for playTests. The session did not touch the Review line table of FRENCH_REVIEW.md, which is hers.
+
+## writeTests, 2026-10-28 (Mod and Source last changed at d9ab22b)
+
+- 7.a `TEST_SCENARIOS.md`: 23 scenarios, one per promised behaviour (thresholds and points checked against the code, Beauty factors of Silver 2.0, Gold 4.0 and Jade 2.5 read in Core, Obsidian not re-read). All `unverified`: nothing played.
+- 7.b Automated unit tests: not applicable. The only logic (scoring, trait sentences) reads Pawn, Thing and ThingDef from the running game, so there is no pure function to test without the game; scenarios 1 to 12 and 19 cover it through Pickle. No artificial test added.
+- 7.c XML checks, rerun now: `Check-ModBasics.ps1` PASS (7 XML files, 6 defs); `Check-XmlFields.ps1` 3 files, no unknown field; `Check-DefRefs.ps1` no missing reference, no wrong type, all parents resolved; `Check-DefInjected.ps1` 26 keys, 0 errors. `Check-XmlClasses.ps1` not run: it needs a TypeLists argument this mod does not have (its only class, the worker, is in the mod assembly).
+- 7.f Results refer to the revision above.
+- 7.d Pickle suites: not written yet.
