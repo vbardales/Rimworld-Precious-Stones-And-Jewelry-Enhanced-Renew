@@ -4,6 +4,14 @@ One scenario per behaviour the description promises. Nothing here has been playe
 `unverified` until the in-game pass (`playTests`). Numbers come from the code (`ThoughtWorker_ShinyEquipment.cs`,
 `Mod/Defs`) and from the shipped game data, read on 2026-10-28.
 
+## Colonists
+
+Every scenario uses the colonists of Nelim's Sanctuary Backlot (save `Nelims-tribe`, mod SanctuaryBacklot, mod of the owner), not
+the colonists of Pickle's `test-colony`, unless the owner grants an express, motivated exception (owner rule, 2026-10-28).
+"The colonist" below is a named person of that save (Miel, Soren, Ryu, Ada, Jiro...), reacquired by name after each load. The Greedy,
+Jealous or Ascetic trait is given or removed by a step for the scenario, then restored. A colonist with no gender (scenario 20) is not
+in that save: the step that makes one acts on an NSB colonist, or the owner decides an exception.
+
 ## Rules the scenarios check
 
 - A worn apparel or the primary weapon is scored by the Beauty stat factor of its **stuff**, only when the
