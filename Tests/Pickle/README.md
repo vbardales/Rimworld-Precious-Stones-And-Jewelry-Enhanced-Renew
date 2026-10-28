@@ -17,6 +17,8 @@ Development only, never published. Scenarios are written, **none has been played
 | `precious-stones-stats.feature` | 16, 17 (equipped stat offsets; bounds to calibrate from the first run's `[stat]` log) |
 | `precious-stones-french-agreement.feature` | 20 (couvert, couverte, couvertx; `@french`) |
 
+| `precious-stones-pronoun.feature` | 20b (the French pronoun of the trait sentences for a colonist with no gender; the form is read from the run log) |
+
 Not done by the owner's decision: 23, and the original-mod incompatibility.
 
 ## Colonists
