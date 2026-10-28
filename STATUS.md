@@ -89,3 +89,4 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 - No in-game check done.
 
 - ChatGPT review of FRENCH_REVIEW.md (2026-10-28, run on the middle dot version): the two neutral-segment findings were already fixed by couvertx, the epicene rewording is declined (agreement is kept when the gender is available); the pronoun finding is kept as an in-game check at playTests; the PUBLICATION.md finding waits for writeDocs.
+- Second ChatGPT review (2026-10-28, on couvertx): Amulet description now says "fine bande de métal" (English: thin metal band, the French said chain). The pronoun finding stays the in-game check above. Virginie's review covers this changed text.
