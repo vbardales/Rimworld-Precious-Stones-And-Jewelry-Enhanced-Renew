@@ -20,7 +20,6 @@ tested_on: never
 remaining:
   - "2026-10-28: defect: Art/Preview-source.png mean value 0.275 (rule: at least 0.30), large dark area on the left reads as a vignette; owner source, not touched"
   - "2026-10-28: unverified: current upstream permissions and Steam comments of 2903245563"
-  - "2026-10-28: defect: Art/Preview.config.json echo file is echo-preview.png, the minimal set names echo-source.png"
   - "2026-10-28: defect: French neutral segment of two thought texts ships a middle dot form, not an al ending (see Translation audit)"
   - "2026-10-28: unverified: French review by Virginie (FRENCH_REVIEW.md)"
   - "2026-10-28: unverified: Check-Translations.ps1 expects handle paths stages.0-N for the six {0} labels, French ships index paths stages.N (Check-DefInjected.ps1 resolves all 26 keys); settle in game"
@@ -60,7 +59,7 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 
 - ModIcon source cropped by badge mode, derivatives regenerated: ModIcon.png 128x128 (26.5 KB), ModIcon.ico, Preview.png 896x504.
 - Preview-source.png 1672x941: object readable (jeweler at a bench with the three neck pieces and the four materials), one figure seen from behind, 2 hue families (dominant 71 %), mean value 0.275 so below the 0.30 rule, which is recorded as a defect. No illustration prompt file exists, nothing to delete.
-- Art holds the minimal set; the echo file is still named echo-preview.png.
+- Art holds the minimal set; the echo file stays named echo-preview.png (owner, 2026-10-28: renaming to echo-source.png comes later; Audit session informed).
 
 ## code, 2026-10-28
 
