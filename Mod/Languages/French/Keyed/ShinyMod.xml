@@ -7,7 +7,8 @@
        noun and a colon agree with nothing. -->
   <ShinyMod.Reason.Shiny>éclat : {ITEM}</ShinyMod.Reason.Shiny>
   <ShinyMod.Reason.Glistening>scintillement : {ITEM}</ShinyMod.Reason.Glistening>
-  <ShinyMod.Reason.AndMore>{REASON}, etc.</ShinyMod.Reason.AndMore>
+  <ShinyMod.Reason.Shiny.AndMore>éclat : {ITEM}, etc.</ShinyMod.Reason.Shiny.AndMore>
+  <ShinyMod.Reason.Glistening.AndMore>scintillement : {ITEM}, etc.</ShinyMod.Reason.Glistening.AndMore>
 
   <!-- Same reason for the wording of these three: vanilla's own French trait descriptions avoid
        predicate adjectives ("est de mauvaise humeur", never "est content/contente"), and these

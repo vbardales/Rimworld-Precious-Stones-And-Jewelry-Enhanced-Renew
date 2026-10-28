@@ -6,7 +6,8 @@
        out of every translator's reach. -->
   <ShinyMod.Reason.Shiny>shiny {ITEM}</ShinyMod.Reason.Shiny>
   <ShinyMod.Reason.Glistening>glistening {ITEM}</ShinyMod.Reason.Glistening>
-  <ShinyMod.Reason.AndMore>{REASON}, etc</ShinyMod.Reason.AndMore>
+  <ShinyMod.Reason.Shiny.AndMore>shiny {ITEM}, etc</ShinyMod.Reason.Shiny.AndMore>
+  <ShinyMod.Reason.Glistening.AndMore>glistening {ITEM}, etc</ShinyMod.Reason.Glistening.AndMore>
 
   <!-- Appended at startup to the descriptions of the three vanilla traits this mod changes.
        {PAWN_pronoun} resolves the same way it does in the sentences it is appended to. -->

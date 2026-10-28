@@ -35,6 +35,9 @@ All notable changes to this port are recorded here. The format follows
 - The ascetic thought declares one stage instead of six identical ones.
   `ThoughtState.StageIndexFor` clamps to the last stage a def declares, so the −5 applies at every
   score exactly as before.
+- The mood tab reason is four complete keyed sentences (`ShinyMod.Reason.Shiny`, `.Glistening`, and
+  their `.AndMore` forms) instead of a translated fragment wrapped in another one, so a translator
+  controls the whole phrase.
 - The scoring loop, previously duplicated for equipment and for apparel, is one method. Same
   behaviour, including the rule that the first glistening item takes the label outright.
 

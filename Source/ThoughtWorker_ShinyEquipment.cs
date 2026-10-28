@@ -39,15 +39,14 @@ namespace DoctorStupid.ShinyMod
                 return ThoughtState.Inactive;
             }
 
-            // The reason is what the mood tab shows in place of the stage label's {0}. It is built
-            // from keyed strings rather than concatenated in English: a label assembled in code is
-            // the one piece of a mod no translator can reach.
-            string reason = (glistening ? "ShinyMod.Reason.Glistening" : "ShinyMod.Reason.Shiny")
+            // The reason is what the mood tab shows in place of the stage label's {0}. Each of the
+            // four wordings is one complete keyed sentence with the item as its only parameter:
+            // a label assembled in code, or a translated fragment wrapped in another, is the one
+            // piece of a mod no translator can reach.
+            string reason = (glistening
+                    ? (count >= 2 ? "ShinyMod.Reason.Glistening.AndMore" : "ShinyMod.Reason.Glistening")
+                    : (count >= 2 ? "ShinyMod.Reason.Shiny.AndMore" : "ShinyMod.Reason.Shiny"))
                 .Translate(best.Named("ITEM"));
-            if (count >= 2)
-            {
-                reason = "ShinyMod.Reason.AndMore".Translate(reason.Named("REASON"));
-            }
 
             // No clamp needed: ThoughtState.StageIndexFor already caps the index at the last stage
             // the def declares, and the defs declare the six this can produce.
