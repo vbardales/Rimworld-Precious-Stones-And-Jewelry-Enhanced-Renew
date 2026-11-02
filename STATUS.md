@@ -21,9 +21,8 @@ remaining:
   - "2026-10-28: defect: Art/Preview-source.png mean value 0.275 (rule: at least 0.30), large dark area on the left reads as a vignette; owner source, not touched"
   - "2026-10-28: unverified: current upstream permissions and Steam comments of 2903245563"
   - "2026-10-28: unverified: in game at playTests, French {PAWN_pronoun} for a pawn with no gender in the three ShinyMod.Trait.* sentences (ChatGPT review, 2026-10-28)"
-  - "2026-10-28: unverified: Check-Translations.ps1 expects handle paths stages.0-N for the six {0} labels, French ships index paths stages.N (Check-DefInjected.ps1 resolves all 26 keys); settle in game"
   - "2026-10-28: unverified: gameplay regression suite and EN/FR in-game validation; the About claim of in-game testing is not backed by evidence"
-updated: 2026-10-28
+updated: 2026-11-02
 protocols_read_sha: 4800d053d2f8cd11436718b6f9e472b000b0f53e
 ---
 
