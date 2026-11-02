@@ -29,12 +29,9 @@ the fixture is never written back.
 
 ## Pass maps
 
-`wsl-deps.sanctuary-minimal.map` stages only what the Backlot depends on. It is **not proven** to load the colonists without the Backlot's
-third-party list (facial animation, realistic bodies): play `@probe` first and read `Player.log`. If it fails, copy
-`SanctuaryBacklot/Tests/Pickle/wsl-deps.sanctuary.map` here line by line, add `path:SanctuaryBacklot/Mod` and the config seeds of
-`SanctuaryBacklot/Tests/Pickle/config/sanctuary/`.
+`wsl-deps.sanctuary-minimal.map` (name kept) is the full third-party list of the Backlot, copied from `SanctuaryBacklot/Tests/Pickle/wsl-deps.sanctuary.map` on 2026-11-02 with the seeds in `config/sanctuary/`, after the first probe failed with only the lines the Backlot depends on (missing gene Eyes_DarkBrown, no Miel). Probe replayed with it.
 
-The integration feature uses `wsl-deps.sanctuary-d4egon.map` (the minimal map plus D4egon's Jewelry, `D4egon.D4egonsJewlry`, Workshop 3757128869), with the same caveat.
+The integration feature uses `wsl-deps.sanctuary-d4egon.map` (the same list plus D4egon's Jewelry, `D4egon.D4egonsJewlry`, Workshop 3757128869).
 
 ## Steps
 

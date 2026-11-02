@@ -24,7 +24,7 @@ remaining:
   - "2026-10-28: unverified: Check-Translations.ps1 expects handle paths stages.0-N for the six {0} labels, French ships index paths stages.N (Check-DefInjected.ps1 resolves all 26 keys); settle in game"
   - "2026-10-28: unverified: gameplay regression suite and EN/FR in-game validation; the About claim of in-game testing is not backed by evidence"
 updated: 2026-10-28
-protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
+protocols_read_sha: 4800d053d2f8cd11436718b6f9e472b000b0f53e
 ---
 
 # Precious Stones and Jewelry Enhanced Renew (unofficial): status
@@ -110,4 +110,5 @@ Entered from writeTests with 7.a to 7.h recorded above. Order of the first ticke
 - Ticket 20261028-112650-429-9357 filed (probe, `-DepMap wsl-deps.sanctuary-minimal.map`, filter @probe, label 532b95c). Mod, Source and Tests stay frozen until RUN_DONE.
 - ChatGPT review, fifth pass (2026-10-28): no language correction. The one pertinent point, the pronoun of the French trait sentences for a colonist with no gender, is now scenario 20b in TEST_SCENARIOS.md; the feature waits for a step NPT was asked for (trait description resolved for a colonist). Nothing else to apply.
 - French validation confirmed by Virginie, 2026-10-28, revision d9ab22b (texts unchanged since), after the fifth ChatGPT pass: translation_fr stays complete, with one exception to validate or fix once seen in game: the pronoun that {PAWN_pronoun} resolves to for a colonist with no gender in the three ShinyMod.Trait.* sentences (scenario 20b). It stays in remaining as unverified.
+- Probe 20261028-112650-429-9357 FAILED (2026-11-02): "no colonist named 'Miel'; the colonists are Nelim"; Player.log: "Could not load reference to Verse.GeneDef named Eyes_DarkBrown" (facial animation list missing). Fix: wsl-deps.sanctuary-minimal.map (name kept) and wsl-deps.sanctuary-d4egon.map now carry the full Backlot third-party list, seeds copied to Tests/Pickle/config/sanctuary/. Probe refiled.
 - Scenario 20b written (Tests/Pickle/Mod/Pickle/Features/precious-stones-pronoun.feature) with the step NPT added (trait description resolved for a colonist, not pushed, not played); 8 features. It finds out the pronoun, it does not assert it.
