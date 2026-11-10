@@ -1,4 +1,4 @@
-# Scenarios 13, 14 and 15 of TEST_SCENARIOS.md: where the three items are made, what gates them, and which stuffs the default bill allows.
+# Scenarios 13, 14 and 15 of docs/TEST_SCENARIOS.md: where the three items are made, what gates them, and which stuffs the default bill allows.
 # Read from the definitions the running game holds, no crafting. Colonist-free: the save only supplies a loaded game. Not played yet (2026-10-28).
 @requires:nelim.pickletools.colonistrace
 @timeout:120

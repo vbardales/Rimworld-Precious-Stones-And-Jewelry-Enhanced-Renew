@@ -1,4 +1,4 @@
-# Scenario 22 of TEST_SCENARIOS.md: the items of another jewellery mod count when they are made of a stuff.
+# Scenario 22 of docs/TEST_SCENARIOS.md: the items of another jewellery mod count when they are made of a stuff.
 # Optional integration pass: D4egon's Jewelry (D4egon.D4egonsJewlry, Workshop 3757128869) staged beside the mod.
 # D4J_DarkRing is Metallic and sits on the right hand, so it does not clash with a neck piece. Not played yet (2026-10-28).
 @requires:D4egon.D4egonsJewlry @requires:nelim.pickletools.colonistrace

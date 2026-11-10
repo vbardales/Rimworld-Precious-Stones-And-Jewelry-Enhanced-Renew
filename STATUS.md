@@ -24,7 +24,6 @@ remaining:
   - "2026-10-28: unverified: gameplay regression suite and EN/FR in-game validation; the About claim of in-game testing is not backed by evidence"
   - "2026-11-10: open 8.c: probe 20261102-203308-711-4813 FAILED again (no colonist named 'Miel'; the colonists are Nelim) after the full Backlot third-party list fix; Tests/Pickle/Inbox/probe2 read, not triaged; cause of the single colonist to find, then refile the probe"
   - "2026-11-10: open 8.l: tested_on never; 8.m: no code_review_sha"
-  - "2026-11-10: defect: About.xml description does not end with the Source code on GitHub link (Check-ModBasics WARN); root TEST_SCENARIOS.md is off the closed list (move to Docs/ or Tests/ with its references)"
 updated: 2026-11-10
 protocols_read_sha: 47692242d1f66af4249b40a64cb55a37cc9b9c6d
 ---
@@ -96,21 +95,21 @@ settings and dependency findings (no settings surface, Core API only) stay unche
 
 ## writeTests, 2026-10-28 (Mod and Source last changed at d9ab22b)
 
-- 7.a `TEST_SCENARIOS.md`: 23 scenarios, one per promised behaviour (thresholds and points checked against the code, Beauty factors of Silver 2.0, Gold 4.0 and Jade 2.5 read in Core, Obsidian not re-read). All `unverified`: nothing played.
+- 7.a `docs/TEST_SCENARIOS.md`: 23 scenarios, one per promised behaviour (thresholds and points checked against the code, Beauty factors of Silver 2.0, Gold 4.0 and Jade 2.5 read in Core, Obsidian not re-read). All `unverified`: nothing played.
 - 7.b Automated unit tests: not applicable. The only logic (scoring, trait sentences) reads Pawn, Thing and ThingDef from the running game, so there is no pure function to test without the game; scenarios 1 to 12 and 19 cover it through Pickle. No artificial test added.
 - 7.c XML checks, rerun now: `Check-ModBasics.ps1` PASS (7 XML files, 6 defs); `Check-XmlFields.ps1` 3 files, no unknown field; `Check-DefRefs.ps1` no missing reference, no wrong type, all parents resolved; `Check-DefInjected.ps1` 26 keys, 0 errors. `Check-XmlClasses.ps1` not run: it needs a TypeLists argument this mod does not have (its only class, the worker, is in the mod assembly).
 - 7.f Results refer to the revision above.
 - 7.d Pickle suites: written, not executed: 7 features, 32 scenario blocks (Check-Steps: 146 step lines, every one resolves to exactly one expression), no local step (the steps are NPT's, in PickleTools ColonistRace, commits 35838fa and dd3eb6e, compiled and not played). Two pass maps: wsl-deps.sanctuary-minimal.map (every feature but the integration one) and wsl-deps.sanctuary-d4egon.map (D4egon's Jewelry); neither proven for the Backlot colonists, the @probe scenario is played first at playTests. Odyssey, Ideology and Anomaly scenarios carry @requires. See Tests/Pickle/README.md.
 - 7.e Not applicable, by choice: unit tests (7.b above); a pass without a DLC (the guards are read by the @requires scenarios, and no fixture without Ideology is known); a declared-incompatibility pass and a 1.5 save (owner, 2026-10-28); a restart sequence (the mod stores nothing).
 - 7.h This section is the record: 7.a to 7.g done.
-- Colonists of the Pickle suite: those of Nelim's Sanctuary Backlot (save Nelims-tribe), never test-colony, unless the owner grants an express, motivated exception (owner rule, 2026-10-28). Recorded in TEST_SCENARIOS.md.
+- Colonists of the Pickle suite: those of Nelim's Sanctuary Backlot (save Nelims-tribe), never test-colony, unless the owner grants an express, motivated exception (owner rule, 2026-10-28). Recorded in docs/TEST_SCENARIOS.md.
 - Scenarios dropped or changed (owner, 2026-10-28): 23 (1.5 save of the original) is not done; the original-mod incompatibility is not tested; scenario 22 now covers the other jewellery mods (optional integration pass, D4egon's Jewelry item made of Gold counts).
 
 ## playTests, 2026-10-28
 
 Entered from writeTests with 7.a to 7.h recorded above. Order of the first tickets: the @probe scenario with wsl-deps.sanctuary-minimal.map (do the Backlot colonists load, do the new steps work, calibrate the stat bounds from the [stat] log), then the full pass in English and in French, then the D4egon pass. Nothing played yet. The tested revision of Mod and Source is d9ab22b.
 - Ticket 20261028-112650-429-9357 filed (probe, `-DepMap wsl-deps.sanctuary-minimal.map`, filter @probe, label 532b95c). Mod, Source and Tests stay frozen until RUN_DONE.
-- ChatGPT review, fifth pass (2026-10-28): no language correction. The one pertinent point, the pronoun of the French trait sentences for a colonist with no gender, is now scenario 20b in TEST_SCENARIOS.md; the feature waits for a step NPT was asked for (trait description resolved for a colonist). Nothing else to apply.
+- ChatGPT review, fifth pass (2026-10-28): no language correction. The one pertinent point, the pronoun of the French trait sentences for a colonist with no gender, is now scenario 20b in docs/TEST_SCENARIOS.md; the feature waits for a step NPT was asked for (trait description resolved for a colonist). Nothing else to apply.
 - French validation confirmed by Virginie, 2026-10-28, revision d9ab22b (texts unchanged since), after the fifth ChatGPT pass: translation_fr stays complete, with one exception to validate or fix once seen in game: the pronoun that {PAWN_pronoun} resolves to for a colonist with no gender in the three ShinyMod.Trait.* sentences (scenario 20b). It stays in remaining as unverified.
 - Probe 20261028-112650-429-9357 FAILED (2026-11-02): "no colonist named 'Miel'; the colonists are Nelim"; Player.log: "Could not load reference to Verse.GeneDef named Eyes_DarkBrown" (facial animation list missing). Fix: wsl-deps.sanctuary-minimal.map (name kept) and wsl-deps.sanctuary-d4egon.map now carry the full Backlot third-party list, seeds copied to Tests/Pickle/config/sanctuary/. Probe refiled.
 - Scenario 20b written (Tests/Pickle/Mod/Pickle/Features/precious-stones-pronoun.feature) with the step NPT added (trait description resolved for a colonist, not pushed, not played); 8 features. It finds out the pronoun, it does not assert it.

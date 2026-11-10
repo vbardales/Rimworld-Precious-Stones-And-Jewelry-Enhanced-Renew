@@ -1,4 +1,4 @@
-# Scenario 20b of TEST_SCENARIOS.md: what {PAWN_pronoun} resolves to in the French trait sentences for a colonist with no gender.
+# Scenario 20b of docs/TEST_SCENARIOS.md: what {PAWN_pronoun} resolves to in the French trait sentences for a colonist with no gender.
 # The assertion only checks that the sentence is there; the pronoun itself is read from the "[trait] <name> <trait> gender None" log line of the
 # run (the step logs the resolved text), then judged by the owner: this scenario FINDS OUT the form, it cannot know it. Not played yet (2026-10-28).
 @french

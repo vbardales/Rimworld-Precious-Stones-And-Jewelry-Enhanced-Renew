@@ -1,4 +1,4 @@
-# Scenario 19 of TEST_SCENARIOS.md: the sentence appended to the Greedy, Jealous and Ascetic trait descriptions, per startup language.
+# Scenario 19 of docs/TEST_SCENARIOS.md: the sentence appended to the Greedy, Jealous and Ascetic trait descriptions, per startup language.
 # The sentence is added by a static constructor, so the language is the one the game started with (never switched in a scenario).
 # Not played yet (2026-10-28).
 @requires:nelim.pickletools.colonistrace

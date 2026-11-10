@@ -1,4 +1,4 @@
-# Scenarios 1 to 12 of TEST_SCENARIOS.md: the mood thoughts driven by the material of worn and held things.
+# Scenarios 1 to 12 of docs/TEST_SCENARIOS.md: the mood thoughts driven by the material of worn and held things.
 # Colonist: Miel of Nelim's Sanctuary Backlot (save Nelims-tribe), traits reset for each scenario. Mood offset steps are strict,
 # so +4 is "above 3.5" and "below 4.5". Not played yet (2026-10-28).
 @requires:nelim.pickletools.colonistrace

@@ -1,4 +1,4 @@
-# Scenario 20 of TEST_SCENARIOS.md: the French thought texts that agree with the colonist: couvert, couverte, couvertx.
+# Scenario 20 of docs/TEST_SCENARIOS.md: the French thought texts that agree with the colonist: couvert, couverte, couvertx.
 # The gender is set FIRST (it changes body and head), then the thought is read. The step puts gender, body and head back after each scenario.
 # The Ascetic thought needs one point; the Greedy stage 1 text needs two points, so a silver necklace and a silver knife.
 # Miel is read as a woman by the Backlot canon; the male case sets her gender to male for the scenario. Not played yet (2026-10-28).
