@@ -22,10 +22,10 @@ remaining:
   - "2026-10-28: unverified: current upstream permissions and Steam comments of 2903245563"
   - "2026-10-28: unverified: in game at playTests, French {PAWN_pronoun} for a pawn with no gender in the three ShinyMod.Trait.* sentences (ChatGPT review, 2026-10-28)"
   - "2026-10-28: unverified: gameplay regression suite and EN/FR in-game validation; the About claim of in-game testing is not backed by evidence"
-  - "2026-11-10: open 8.c: probe 20261102-203308-711-4813 failed because Miel is not in the save Nelims-tribe (only Nelim): the Backlot features create her with the step a colonist Miel of kind Colonist exists. Probe fixed (commit pushed), ticket 20261110-160404-280-7af0 filed (filter precious-stones-probe::silver necklace, map wsl-deps.sanctuary-minimal.map, -SkipDefCheck because the mod under test is not in the map, evidence Tests/Pickle/Inbox/probe3). On green: add the same creation step to the Miel scenarios of score, stats, other-jewellery, french-agreement, pronoun. Old run parked in Tests/Pickle/Parked/probe-no-miel (delete when probe3 is read). TM: convert tests shape (Mod tests shape) via CI/CD after the probe"
+  - "2026-11-10: open 8.c: probe GREEN (ticket 20261110-160404-280-7af0, 1 passed, 0 failed, map wsl-deps.sanctuary-minimal.map; the earlier failure was Miel missing from the save). Creation step added to the Background of score, stats, other-jewellery, french-agreement, pronoun (Check-Steps: 164 step lines resolve). Next: full pass EN then FR, then D4egon pass (tickets not filed yet). Inbox probe3 and Parked probe-no-miel deleted after reading. CI/CD asked for the tests shape conversion (Mod tests shape) only after TM/owner signal: facts sent 2026-11-10 (item 3811382942, DLL, no Tests/Test-Mod.ps1)"
   - "2026-11-10: open 8.l: tested_on never; 8.m: no code_review_sha"
 updated: 2026-11-10
-protocols_read_sha: 47692242d1f66af4249b40a64cb55a37cc9b9c6d
+protocols_read_sha: 41435581d5b373fc72b95b1c83080954381bd6a4
 ---
 
 # Precious Stones and Jewelry Enhanced Renew (unofficial): status

@@ -8,6 +8,7 @@ Feature: Precious Stones: the stat offsets of the items
   Background:
     Given the save "Nelims-tribe" is loaded
     And game speed is paused
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
 
   Scenario: 16 a necklace adds 0.10 social impact
     When Nelim's Pickle Tools: "Miel" wears "DoctorStupid_Apparel_Necklace" made of "Gold"

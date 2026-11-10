@@ -8,6 +8,7 @@ Feature: Precious Stones: the items of other jewellery mods
   Background:
     Given the save "Nelims-tribe" is loaded
     And game speed is paused
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Miel" has no trait "Greedy"
     And Nelim's Pickle Tools: "Miel" has no trait "Jealous"
     And Nelim's Pickle Tools: "Miel" has no trait "Ascetic"

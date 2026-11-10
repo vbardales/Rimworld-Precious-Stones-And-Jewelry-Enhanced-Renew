@@ -9,6 +9,7 @@ Feature: Precious Stones: the pronoun of the French trait sentences for a coloni
   Background:
     Given the save "Nelims-tribe" is loaded
     And game speed is paused
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
 
   Scenario: 20b greedy, no gender
     Given Nelim's Pickle Tools: "Miel" has the trait "Greedy"
