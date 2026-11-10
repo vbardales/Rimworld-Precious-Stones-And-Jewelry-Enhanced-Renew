@@ -1,5 +1,5 @@
 # One scenario that tells whether the Backlot's colonists load with the minimal pass map, and whether the new steps work at all.
-# Played alone first (-Filter "@probe"); read Player.log for missing-def warnings. Not played yet (2026-10-28).
+# Played alone first (-Filter precious-stones-probe). The save holds only Nelim: Miel is created by the step below, as the Backlot features do.
 @requires:nelim.pickletools.colonistrace
 @timeout:120
 Feature: Precious Stones probe
@@ -8,6 +8,8 @@ Feature: Precious Stones probe
   Scenario: probe: a silver necklace on Miel gives one point
     Given the save "Nelims-tribe" is loaded
     And game speed is paused
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Miel" loses all genes
     And Nelim's Pickle Tools: "Miel" has no trait "Greedy"
     And Nelim's Pickle Tools: "Miel" has no trait "Jealous"
     And Nelim's Pickle Tools: "Miel" has no trait "Ascetic"
