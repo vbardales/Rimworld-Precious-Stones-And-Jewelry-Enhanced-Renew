@@ -22,8 +22,11 @@ remaining:
   - "2026-10-28: unverified: current upstream permissions and Steam comments of 2903245563"
   - "2026-10-28: unverified: in game at playTests, French {PAWN_pronoun} for a pawn with no gender in the three ShinyMod.Trait.* sentences (ChatGPT review, 2026-10-28)"
   - "2026-10-28: unverified: gameplay regression suite and EN/FR in-game validation; the About claim of in-game testing is not backed by evidence"
-updated: 2026-11-02
-protocols_read_sha: 4800d053d2f8cd11436718b6f9e472b000b0f53e
+  - "2026-11-10: open 8.c: probe 20261102-203308-711-4813 FAILED again (no colonist named 'Miel'; the colonists are Nelim) after the full Backlot third-party list fix; Tests/Pickle/Inbox/probe2 read, not triaged; cause of the single colonist to find, then refile the probe"
+  - "2026-11-10: open 8.l: tested_on never; 8.m: no code_review_sha"
+  - "2026-11-10: defect: About.xml description does not end with the Source code on GitHub link (Check-ModBasics WARN); root TEST_SCENARIOS.md is off the closed list (move to Docs/ or Tests/ with its references)"
+updated: 2026-11-10
+protocols_read_sha: 47692242d1f66af4249b40a64cb55a37cc9b9c6d
 ---
 
 # Precious Stones and Jewelry Enhanced Renew (unofficial): status
