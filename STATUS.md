@@ -26,7 +26,7 @@ remaining:
   - "2026-11-11 (supersedes the bf6f line above): EN redo bf6f DONE exit 5; summary.md final 120 scenarios, 103 pass, 13 fail, 4 skipped (summary.json stale in-progress 119/12). Triage: 9 reds not this mod (4 generic Pickle steps: TailorMadeUnifiedApparelBodyRefitting type-resolve crash on debug actions, frame readback; 5 body-type Female-texture drawing of Fat/Thin/Hulk women) to NPT; 4 reds = FR agreement scenarios played in English, belong to FR pass. FR pass filed 20261111-182503-244-df70 (French, filter ascetic+greedy of precious-stones-french-agreement, evidence Tests/Pickle/Inbox/fr-agreement). EN run parked in Tests/Pickle/Parked/full-en-2. Then D4egon pass, then CI/CD go. Tree frozen until RUN_DONE"
   - "2026-11-10: open 8.l: tested_on never; 8.m: no code_review_sha"
 updated: 2026-11-11
-protocols_read_sha: ac4114f1491f18329efb742dc7755f21a1f6e9bc
+protocols_read_sha: 05112c1dfec9b4e37677cbbe9fa706a591e7859c
 ---
 
 # Precious Stones and Jewelry Enhanced Renew (unofficial): status
